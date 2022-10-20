@@ -1,7 +1,6 @@
 <template>
-  <div class="events">
-    Events page
-    
+  <div class="temp__event">
+    Temp event page
   </div>
 </template>
 
@@ -12,5 +11,5 @@ export default {
 </script>
 
 <style scoped>
-
+  
 </style>

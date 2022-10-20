@@ -2,6 +2,7 @@
   <div class="main">
     <Welcome></Welcome>
     <Letter></Letter>
+    <Events></Events>
   </div>
 </template>
 
@@ -10,11 +11,13 @@
 
 import Welcome from '@/components/Welcome.vue'
 import Letter from '@/components/Letter.vue'
+import Events from '@/components/Events.vue'
 export default {
   components: {
     Welcome,
-    Letter
-  },
+    Letter,
+    Events
+},
   data() {
     return {
 

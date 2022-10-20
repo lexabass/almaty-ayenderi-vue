@@ -70,4 +70,10 @@ button {
   top: 146px !important;
 }
 }
+@media screen and (max-width: 1680px) {
+  button {
+  left: 180px !important;
+  top: 210px !important;
+}
+}
 </style>

@@ -6,6 +6,7 @@ import Events from '@/views/Events'
 import News from '@/views/News'
 import Organizators from '@/views/Organizators'
 import Viewers from '@/views/Viewers'
+import TempEvent from '@/views/TempEvent'
 
 const routes = [
   {
@@ -23,6 +24,10 @@ const routes = [
   {
     path: '/events',
     component: Events
+  },
+  {
+    path: '/tempevent',
+    component: TempEvent
   },
   {
     path: '/news',

@@ -2,7 +2,7 @@
   <div class="letter">
     <h1>ALMATY GALLERY СОВМЕСТНО С АРТ-ЭКСПО ПРЕДСТАВЛЯЮТ
  ВЫСТАВКУ «ВАН ГОГ. ТАЙНЫ ГЕНИЯ И БЕЗУМЦА</h1>
-    <BtnBlack>Узнать подробнее</BtnBlack>
+    <BtnBlack @click="$router.push('/tempevent')">Узнать подробнее</BtnBlack>
   </div>
 </template>
 
