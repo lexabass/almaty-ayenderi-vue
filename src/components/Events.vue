@@ -1,17 +1,25 @@
 <template>
-  <div class="events">
+  <div class="events" id="events">
     <div class="events__top">
-    <h1>Наши мероприятия</h1>
-    <div class="events_top_btns">
-      <BtnBlack>Дворец Республики</BtnBlack>
-      <BtnBlack style="margin-left: 20px">Almaty Gallery</BtnBlack>
-      <BtnBlack style="margin-left: 20px">Театр кукол</BtnBlack>
+      <h1>Наши мероприятия</h1>
+      <div class="events_top_btns">
+        <BtnBlack>Дворец Республики</BtnBlack>
+        <BtnBlack style="margin-left: 20px">Almaty Gallery</BtnBlack>
+        <BtnBlack style="margin-left: 20px">Театр кукол</BtnBlack>
+      </div>
     </div>
+    <EventList :events="events" />
+    <div class="see_all" @click="$router.push('/events')">
+      <p>Посмотреть все</p>
+      <div class="btn">
+        <img src="../assets/Ellipse1.png" alt="">
+        <img id="arrow" src="../assets/Arrow1.png" alt="">
+      </div>
+    </div>
+    <!-- <hr style="width: 100%; margin-top: 6vh;"> -->
   </div>
-  <EventList :events="events" />
-  <p id="see_all">Посмотреть все</p>
-  </div>
-  
+
+
 </template>
   
 <script>
@@ -30,14 +38,18 @@ export default {
       events,
     }
   }
-  
+
 }
 </script>
   
 <style>
 .events {
   width: 1439px;
+  margin-bottom: 50px;
+  padding-bottom: 1rem;
+  border-bottom: #000000 2px solid;
 }
+
 .events__top {
   display: flex;
   justify-content: space-between;
@@ -50,19 +62,45 @@ export default {
   justify-content: space-between;
   align-items: center;
 }
-#see_all {
+
+.see_all {
   float: right;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+  cursor: pointer;
+}
+
+.see_all p {
+  margin-right: 10px;
+}
+
+.see_all .btn img {
+  /* max-width: 50%; */
+  height: 50%;
+}
+
+.see_all .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.see_all .btn #arrow {
+  position: absolute;
+  width: 14px;
+  height: 12px;
 }
 
 @media screen and (max-width: 1360px) {
+  .events {
+    width: 90vw;
+  }
 
-.events {
-  position: relative;
-  padding: 20px 100px;
-  border: 3px solid black;
-  margin-top: 70px;
-  width: 90vw;
-  margin-bottom: 50px;
-}
+  .events__top {
+    width: 90vw;
+  }
 }
 </style>

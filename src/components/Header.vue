@@ -14,7 +14,7 @@
           </div>
         </div>
         <ul class="nav">
-          <li @click="$router.push('/events')">Наши мероприятия</li>
+          <li @click="$router.push('/')">Наши мероприятия</li>
           <li @click="$router.push('/viewers')">Зрителям</li>
           <li @click="$router.push('/organizators')">Организаторам</li>
           <li @click="$router.push('/news')">Новости</li>

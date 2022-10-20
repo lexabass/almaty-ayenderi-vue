@@ -45,12 +45,7 @@ button {
 }
 
 .letter {
-  position: relative;
-  padding: 20px 100px;
-  border: 3px solid black;
-  margin-top: 70px;
   width: 90vw;
-  margin-bottom: 50px;
 }
 }
 </style>

@@ -64,16 +64,18 @@ button {
   left: 220px;
   top: 220px;
 }
-@media screen and (max-width: 1360px) {
-  button {
-  left: 106px !important;
-  top: 146px !important;
-}
-}
+
+
 @media screen and (max-width: 1680px) {
   button {
   left: 180px !important;
   top: 210px !important;
+}
+}
+@media screen and (max-width: 1360px) {
+  button {
+  left: 106px !important;
+  top: 146px !important;
 }
 }
 </style>
