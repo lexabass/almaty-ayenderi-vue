@@ -31,15 +31,22 @@ export default {
   padding-bottom: 1rem;
   position: relative;
   height: 60vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .news h1 {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1360px) {
   .news {
     width: 90vw;
+    height: 90vh;
+  }
+  .news h1 {
+    height: 10%;
+    margin-bottom: 0;
   }
 }
 </style>

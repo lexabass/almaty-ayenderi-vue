@@ -85,8 +85,11 @@ export default {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 20px;
 }
-
+.footer .about_us .about_us_logo img {
+  max-width: 100%;
+}
 .footer .about_us .about_us_logo p {
   font-style: normal;
   font-weight: 400;
