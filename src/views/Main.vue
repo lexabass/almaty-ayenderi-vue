@@ -3,6 +3,7 @@
     <Welcome></Welcome>
     <Letter></Letter>
     <Events></Events>
+    <News></News>
     <Contacts></Contacts>
     <Footer></Footer>
   </div>
@@ -16,13 +17,16 @@ import Letter from '@/components/Letter.vue'
 import Events from '@/components/Events.vue'
 import Contacts from '@/components/Contacts.vue'
 import Footer from '@/components/Footer.vue'
+import News from '@/components/News.vue'
 export default {
   components: {
     Welcome,
     Letter,
     Events,
+    News,
     Contacts,
     Footer
+    
 },
   data() {
     return {
