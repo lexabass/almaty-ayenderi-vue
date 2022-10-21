@@ -1,11 +1,11 @@
 <template>
   <div class="events" id="events">
     <div class="events__top">
-      <h1>Наши мероприятия</h1>
+      <h1 id="title">Наши мероприятия</h1>
       <div class="events_top_btns">
         <BtnBlack>Дворец Республики</BtnBlack>
-        <BtnBlack style="margin-left: 20px">Almaty Gallery</BtnBlack>
-        <BtnBlack style="margin-left: 20px">Театр кукол</BtnBlack>
+        <BtnBlack>Almaty Gallery</BtnBlack>
+        <BtnBlack>Театр кукол</BtnBlack>
       </div>
     </div>
     <EventList :events="events" />
@@ -44,23 +44,49 @@ export default {
   
 <style>
 .events {
-  width: 1439px;
+  width: 90vw;
   margin-bottom: 50px;
   padding-bottom: 1rem;
   border-bottom: #000000 2px solid;
+  margin-top: 70px;
+}
+
+.events #title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 49px;
+
+
+  color: #1D1D1D;
 }
 
 .events__top {
   display: flex;
   justify-content: space-between;
-  width: 1439px;
-  margin-top: 50px;
+  width: 90vw;
 }
 
 .events_top_btns {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 27%;
+}
+.events_top_btns button {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 17px;
+
+  text-align: center;
+  letter-spacing: 0.0118em;
+
+  max-width: 45%;
+  height: 34px;
+  padding: 0 2%;
+
+  border-radius: 24px;
 }
 
 .see_all {
@@ -95,12 +121,12 @@ export default {
 }
 
 @media screen and (max-width: 1360px) {
-  .events {
-    width: 90vw;
-  }
 
   .events__top {
     width: 90vw;
+  }
+  .events_top_btns {
+    width: 37%;
   }
 }
 </style>

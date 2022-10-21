@@ -14,8 +14,9 @@ export default {
 button {
   cursor: pointer;
   color: #000;
-  width: 207px;
   height: 32px;
+  max-width: 30%;
+  width: auto;
   border: 1px solid #000;
   border-radius: 35px;
 }

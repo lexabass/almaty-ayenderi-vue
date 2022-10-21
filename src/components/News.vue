@@ -27,8 +27,8 @@ export default {
   
 <style>
 .news {
-  width: 1439px;
-  padding-bottom: 1rem;
+  width: 90vw;
+  margin-bottom: 50px;
   position: relative;
   height: 60vh;
   display: flex;
@@ -41,7 +41,6 @@ export default {
 
 @media screen and (max-width: 1360px) {
   .news {
-    width: 90vw;
     height: 90vh;
   }
   .news h1 {

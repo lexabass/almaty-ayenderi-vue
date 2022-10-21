@@ -1,15 +1,22 @@
 <template>
   <div class="event__item">
     <div class="event__info">
-      <div>Имя актера или группы {{item.id}} </div>
-      <div>
-        <h1>Название:</h1> {{ item.title}}
+      <div class="group__1">
+        <div>Имя актера или группы {{item.id}} </div>
+        <div>
+          <h1>Название: {{ item.title}}</h1>
+        </div>
       </div>
-      <div class="event_info_date">
-        <div>Дата: {{ Date.now() }}</div>
-        <div>Время: {{ Date.now() }}</div>
-        <BtnWhite @click="$router.push(`/events/${item.id}`)" style="margin-left: 50px; margin-top: 20px;">Купить билеты</BtnWhite>
+
+      <div class="group__2">
+        <div class="event_info_date">
+          <div>Дата: {{ Date.now() }}</div>
+          <div>Время: {{ Date.now() }}</div>
+          <BtnWhite @click="$router.push(`/events/${item.id}`)" style="margin-left: 50px; margin-top: 20px;">Купить
+            билеты</BtnWhite>
+        </div>
       </div>
+
 
     </div>
     <div class="event__poster">
@@ -46,14 +53,15 @@ export default {
   flex-direction: column;
   justify-content: space-evenly;
   padding: 20px;
-  width: 50%;
-  background-color: black;
+  width: 52%;
+  background: #1D1D1D;
   color: #ffffff;
 }
 
 .event__poster {
-  width: 50%;
+  width: 48%;
 }
+
 .event__poster img {
   width: 100%;
   height: 100%;

@@ -1,5 +1,5 @@
 <template>
-  <div class="events">
+  <div class="events_page">
     Events page
     
   </div>
