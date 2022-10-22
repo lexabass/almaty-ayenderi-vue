@@ -33,7 +33,15 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 3rem;
-  height: 90%;
+  height: 100%;
 }
 
+@media screen and (max-width: 1360px) {
+  .news__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1.5rem;
+  height: 100%;
+}
+}
 </style>

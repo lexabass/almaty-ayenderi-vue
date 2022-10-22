@@ -71,7 +71,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 27%;
+  width: 30%;
 }
 .events_top_btns button {
   font-style: normal;
@@ -126,7 +126,7 @@ export default {
     width: 90vw;
   }
   .events_top_btns {
-    width: 37%;
+    width: 42%;
   }
 }
 </style>

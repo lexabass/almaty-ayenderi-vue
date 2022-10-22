@@ -53,7 +53,7 @@ export default {
 
 .news__item .news__info {
   height: 60%;
-  padding: 10px;
+  padding: 7%;
   padding-bottom: 0;
   background: #1D1D1D;
 }
@@ -85,7 +85,7 @@ export default {
   position: absolute;
   margin-top: 20px;
   bottom: 1rem;
-  width: 90%;
+  width: 86%;
   justify-content: flex-end;
 
   font-style: italic;
@@ -99,6 +99,17 @@ export default {
 @media screen and (max-width: 1360px) {
   h2 {
     font-size: 1em;
+  }
+
+  .news__item .news__poster {
+    height: 30%;
+  }
+
+  .news__item .news__info {
+    height: 70%;
+    padding: 7%;
+    padding-bottom: 0;
+    background: #1D1D1D;
   }
 }
 </style>

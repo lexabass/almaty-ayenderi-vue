@@ -1,11 +1,7 @@
 <template>
   <div v-if="events.length > 0" class="events__grid">
-    <EventItem 
-      v-for="item in events"
-      :item="item"
-      :key="item.id"
-      />
-    
+    <EventItem v-for="item in events" :item="item" :key="item.id" />
+
   </div>
   <h2 v-else style="color: red;">
     Список мероприятий пуст
@@ -15,16 +11,16 @@
 <script>
 import EventItem from '@/components/EventItem.vue';
 export default {
-    components: {
+  components: {
     EventItem,
-},
-    props: {
-        events: {
-            type: Array,
-            required: true
-        }
-    },
-    
+  },
+  props: {
+    events: {
+      type: Array,
+      required: true
+    }
+  },
+
 }
 </script>
 
@@ -37,4 +33,10 @@ export default {
   column-gap: 3rem;
 }
 
+@media screen and (max-width: 1360px) {
+  .events__grid {
+    row-gap: 3rem;
+    column-gap: 2rem;
+  }
+}
 </style>
