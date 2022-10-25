@@ -1,5 +1,5 @@
 <template>
-  <div class="news">
+  <div class="news_page">
     News page
   </div>
 </template>

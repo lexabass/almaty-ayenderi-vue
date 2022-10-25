@@ -73,6 +73,7 @@ export default {
   align-items: center;
   width: 30%;
 }
+
 .events_top_btns button {
   font-style: normal;
   font-weight: 400;
@@ -125,8 +126,48 @@ export default {
   .events__top {
     width: 90vw;
   }
+
   .events_top_btns {
     width: 42%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .events #title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 1em;
+    padding-bottom: 1rem;
+  }
+
+  .events__top {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+  }
+
+  .events_top_btns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .events_top_btns button {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 1rem;
+
+    text-align: center;
+    letter-spacing: 0.0118em;
+
+    max-width: 60%;
+    height: 2rem;
+    padding: 0 1%;
+    margin-right: 1rem;
+    border-radius: 2rem;
   }
 }
 </style>

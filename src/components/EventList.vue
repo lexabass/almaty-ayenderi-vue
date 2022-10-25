@@ -39,4 +39,10 @@ export default {
     column-gap: 2rem;
   }
 }
+@media screen and (max-width: 420px) {
+  .events__grid {
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+}
+}
 </style>

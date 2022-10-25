@@ -30,7 +30,6 @@ export default {
   width: 90vw;
   margin-bottom: 50px;
   position: relative;
-  height: 60vh;
   display: flex;
   flex-direction: column;
 }
@@ -40,12 +39,21 @@ export default {
 }
 
 @media screen and (max-width: 1360px) {
-  .news {
-    height: 90vh;
-  }
+  
+
   .news h1 {
     height: 10%;
     margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .news h1 {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1em;
+    padding-bottom: 1rem;
   }
 }
 </style>
