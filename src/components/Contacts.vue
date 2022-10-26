@@ -71,4 +71,20 @@ export default {
     color: #000000;
     margin-top: 20px;
 }
+
+@media screen and (max-width: 420px) {
+  .contacts_section {
+    background: none;
+    height: auto;
+  }
+  .contacts_section .information {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  } 
+  .contacts_section .information .data {
+    padding-bottom: 1rem;
+  }
+}
 </style>

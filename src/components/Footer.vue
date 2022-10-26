@@ -87,9 +87,11 @@ export default {
   flex-direction: column;
   padding: 20px;
 }
+
 .footer .about_us .about_us_logo img {
   max-width: 100%;
 }
+
 .footer .about_us .about_us_logo p {
   font-style: normal;
   font-weight: 400;
@@ -117,14 +119,17 @@ export default {
   border-top: #000000 1px solid;
   border-bottom: #000000 1px solid;
 }
+
 .footer .about_us .about_us_text .socials p {
   width: 30%;
 }
+
 .footer .about_us .about_us_text .socials .soc {
   width: 40%;
   display: flex;
   justify-content: space-between;
 }
+
 .footer .about_us .about_us_text .navbar {
   width: 100%;
   position: relative;
@@ -132,6 +137,7 @@ export default {
   justify-content: flex-start;
   margin-top: 40px;
 }
+
 .footer .about_us .about_us_text .navbar #first {
   display: flex;
   flex-direction: column;
@@ -139,6 +145,7 @@ export default {
   position: relative;
   width: 30%;
 }
+
 .footer .about_us .about_us_text .navbar #first li a {
   font-style: normal;
   font-weight: 400;
@@ -200,7 +207,41 @@ export default {
     width: 90vw;
     height: 90vh;
   }
-};
-  
+}
 
+@media screen and (max-width: 420px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+  }
+
+  .footer .about_us {
+    flex-direction: column;
+  }
+
+  .footer .about_us .about_us_logo {
+    width: 100%;
+    height: 100%
+  }
+
+  .footer .about_us .about_us_text {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .footer .about_us .about_us_text .navbar {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2rem;
+  }
+
+  .footer .about_us .about_us_text .navbar #first {
+    width: 50%;
+  }
+  .footer .about_us .about_us_text .navbar #second {
+    width: 50%;
+  }
+}
 </style>

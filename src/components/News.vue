@@ -48,6 +48,9 @@ export default {
 }
 
 @media screen and (max-width: 420px) {
+  .news {
+    margin-bottom: 1.5rem;
+  }
   .news h1 {
     font-size: 1.8rem;
     font-style: normal;

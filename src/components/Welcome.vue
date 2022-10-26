@@ -78,7 +78,7 @@ button {
 
 @media screen and (max-width: 1360px) {
   .welcome {
-    height: 95vh;
+    height: 100vh;
   }
   button {
     left: 30% ;
