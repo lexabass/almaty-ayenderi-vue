@@ -163,10 +163,10 @@ export default {
     text-align: center;
     letter-spacing: 0.0118em;
 
-    max-width: 60%;
+    max-width: 100%;
     height: 2rem;
     padding: 0 1%;
-    margin-right: 1rem;
+    margin-right: 0.7rem;
     border-radius: 2rem;
   }
 }

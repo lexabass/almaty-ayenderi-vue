@@ -68,8 +68,35 @@ button {
     width: 90vw;
     padding: 3% 15% 1.5%;
   }
+
   h1 {
     font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .letter {
+    margin-top: 3rem;
+    width: 90vw;
+    padding: 3% 10% 3%;
+  }
+
+  h1 {
+    font-size: 1rem;
+    line-height: 130.4%;
+    /* or 31px */
+
+    letter-spacing: 0.0125em;
+  }
+
+  button {
+    font-size: 0.8rem;
+    margin-top: 5%;
+    max-width: 100%;
+    height: 1.5rem;
+    padding: 0 2%;
+
+    border-radius: 41px;
   }
 }
 </style>

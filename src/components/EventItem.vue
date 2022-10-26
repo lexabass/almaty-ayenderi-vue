@@ -2,10 +2,9 @@
   <div class="event__item">
     <div class="event__info">
       <div class="group__1">
-        <div class="author_title">Имя актера или группы {{item.id}} </div>
-        <div>
-          <h1>Название: {{ item.title}}</h1>
-        </div>
+        <div class="author_title">Имя актера или группы {{ item.id }} </div>
+        <h1>Название мероприятия текущего года</h1>
+        <!-- <h1>Название: {{ item.title }}</h1> -->
       </div>
 
       <div class="group__2">
@@ -66,7 +65,7 @@ export default {
 
 .event_info_date {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1rem;
   line-height: 18px;
 }
@@ -79,7 +78,7 @@ export default {
   padding-bottom: 10%;
 }
 
-h1 {
+.event__info h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
@@ -107,7 +106,35 @@ button {
     font-size: 1.5rem;
     line-height: 1.5rem;
   }
+}
 
-  
+@media screen and (max-width: 420px) {
+  .event__info .author_title {
+    font-size: 1rem;
+  }
+
+  .event__info h1 {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+  .event__info {
+    padding-bottom: 3%;
+  }
+  .group__1 {
+    padding-bottom: 0.8rem;
+  }
+
+  .event_info_date {
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+
+  button {
+    margin-top: 1rem;
+    float: right;
+    height: 1.5rem;
+    max-width: 80%;
+    padding: 0% 2%;
+  }
 }
 </style>

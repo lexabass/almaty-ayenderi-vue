@@ -4,7 +4,7 @@
       <img src="https://picsum.photos/300/200" alt="">
     </div>
     <div class="news__info">
-      <h2>Название: {{ item.title}} </h2>
+      <h2>Название: {{ item.title }} </h2>
       <p id="text">Текст: {{ item.body }}</p>
       <p id="read_more" @click="$router.push(`/news/${item.id}`)">Читать далее<span
           style="margin-left: 10px; font-size: 1.2rem;">&#129046;</span>
@@ -110,6 +110,12 @@ export default {
     padding: 7%;
     padding-bottom: 0;
     background: #1D1D1D;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .news__item .news__poster {
+    height: 40%;
   }
 }
 </style>

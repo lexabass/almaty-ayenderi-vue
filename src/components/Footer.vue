@@ -35,17 +35,13 @@
       </div>
     </div>
 
-
-
-
-
-
     <div class="partners">
       <img src="../assets/p1.png" alt="">
       <img src="../assets/p2.png" alt="">
       <img src="../assets/p3.png" alt="">
       <img src="../assets/p4.png" alt="">
       <img src="../assets/p5.png" alt="">
+      <img src="../assets/p6_.png" alt="">
     </div>
 
     <p id="rights">
@@ -213,7 +209,8 @@ export default {
   .footer {
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    height: auto;
+    margin-top: 1.5rem;
   }
 
   .footer .about_us {
@@ -230,6 +227,10 @@ export default {
     margin-top: 2rem;
   }
 
+  .footer .about_us .about_us_text .socials p {
+    width: 50%;
+  }
+
   .footer .about_us .about_us_text .navbar {
     position: relative;
     display: flex;
@@ -240,8 +241,38 @@ export default {
   .footer .about_us .about_us_text .navbar #first {
     width: 50%;
   }
+
   .footer .about_us .about_us_text .navbar #second {
     width: 50%;
+  }
+
+  .footer .partners {
+    height: auto;
+    margin-top: 1.5rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 1rem;
+    column-gap: 2em;
+  }
+
+  .footer .partners img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer #rights {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #1D1D1D;
+    text-align: center;
+
+    position: relative;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 </style>
